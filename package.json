@@ -1,0 +1,25 @@
+{
+  "name": "goku-design-system",
+  "version": "0.0.1",
+  "description": "Goku design system for SoundMolto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "preact": "^8.4.2",
+    "preact-material-components": "^1.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-links": "^5.0.6",
+    "@storybook/addons": "^5.0.6",
+    "@storybook/preact": "^5.0.6",
+    "babel-loader": "^8.0.5"
+  }
+}
