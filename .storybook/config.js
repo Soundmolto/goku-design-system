@@ -1,6 +1,7 @@
+import { h } from 'preact';
 import { configure, addParameters, addDecorator } from '@storybook/preact';
 import { create } from '@storybook/theming';
-import { colorPrimary, colorSecondary, sidebarBG, commonBG, inputBG } from '../stories/constants';
+import { colorPrimary, colorSecondary, sidebarBG, commonBG, inputBG, CSSVariables } from '../stories/constants';
 import { withOptions } from '@storybook/addon-options';
 
 // automatically import all files ending in *.stories.js
@@ -9,6 +10,14 @@ const loadStories = () => {
   document.body.className += ` mdc-theme--dark`
   req.keys().forEach(filename => req(filename));
 }
+
+const CSSDecorator = storyFn => (
+  <div>
+    <CSSVariables />
+    {/* <IconFont /> */}
+    {storyFn()}
+  </div>
+);
 
 // coral / ocean highlights
 const theme = create({
@@ -34,6 +43,8 @@ addDecorator(
     url: 'https://github.com/soundmolto/goku-design-system',
   }),
 );
+
+addDecorator(CSSDecorator);
 
 
 configure(loadStories, module);

@@ -1,4 +1,3 @@
-/** @jsx h */
 import { h } from 'preact';
 import { commonFG } from '../constants';
 import { Badge } from '../Badge/Badge';
