@@ -40,7 +40,8 @@ export const CSSVariables = createGlobalStyle`
     --theme-reduced-font-size: 0.8rem;
 
     /** Animation max speed */
-    --animation-max: 100;
+	--animation-max: 100ms;
+	--transition-animation: transform 100ms ease-in-out;
 }
 
 .theme-dark {
@@ -70,12 +71,14 @@ html, body {
 /** Allow toggling off animations from a browser provided setting */
 @media screen and (prefers-reduced-motion: reduce) {
     :root {
-        --animation-max: 0;
+		--animation-max: 0;
+		--transition-animation: transform 0s ease-in-out;
     }
 }
 
 .animations-off {
-    --animation-max: 0;
+	--animation-max: 0;
+	--transition-animation: transform 0s ease-in-out;
 }
 
 `;
