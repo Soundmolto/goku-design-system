@@ -19,7 +19,7 @@ const Title = ({ children }) => <h1>{children}</h1>;
 /* eslint-disable-next-line react/prop-types */
 const Introduction = () => (
   <Main>
-    <Title>Welcome to Goku Design System <Underlined>WIP</Underlined></Title>
+    <Title>Welcome to Goku Design System <Underlined title="Work in progress">WIP</Underlined></Title>
     <p>
       This is the storybook for SoundMolto
     </p>
