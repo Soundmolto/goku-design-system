@@ -15,5 +15,12 @@ module.exports = ({ config }) => {
 		include: include
 	});
 
+	config.resolve.alias = Object.assign({}, config.resolve.alias, {
+		react: "preact/compat",
+		React: "preact/compat",
+		'react-dom': 'preact/compat',
+		'React-Dom': 'preact/compat'
+	})
+
 	return config;
 };

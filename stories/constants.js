@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const colorPrimary = `#5D8CAE`;
 export const colorSecondary = `#C67DCB`;
@@ -9,7 +9,7 @@ export const commonBG = `#111111`;
 export const inputBG = `rgba(0, 0, 0, 0.7)`;
 export const commonFG = `#ffffff`;
 
-export const CSSVariables = styled.style`
+export const CSSVariables = createGlobalStyle`
 :root {
 	--mdc-theme-primary: #5D8CAE;
 	--mdc-theme-secondary: #c67dcb;
@@ -33,7 +33,9 @@ export const CSSVariables = styled.style`
 	--mdc-sidebar-footer-bg: #fff;
 	--mdc-sidebar-footer-fg: rgb(26, 26, 26);
 	--mdc-search-bg: rgba(0, 0, 0, 0.2);
-	--floating-label-login-bg: #111;
+    --floating-label-login-bg: #111;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .mdc-theme--dark {
@@ -50,5 +52,4 @@ export const CSSVariables = styled.style`
 	--mdc-search-bg: rgba(0, 0, 0, 0.7);
 	--floating-label-login-bg: #000;
 	/* #b64040 */
-}
-`;
+}`;
