@@ -38,6 +38,9 @@ export const CSSVariables = createGlobalStyle`
 
     /** Font sizes */
     --theme-reduced-font-size: 0.8rem;
+
+    /** Animation max speed */
+    --animation-max: 100;
 }
 
 .theme-dark {
@@ -62,6 +65,17 @@ html, body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/** Allow toggling off animations from a browser provided setting */
+@media screen and (prefers-reduced-motion: reduce) {
+    :root {
+        --animation-max: 0;
+    }
+}
+
+.animations-off {
+    --animation-max: 0;
 }
 
 `;
