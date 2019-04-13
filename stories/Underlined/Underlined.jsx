@@ -8,7 +8,7 @@ font-weight: 600;
 border-radius: 0;
 padding: 0 20px;
 margin: 0;
-color: var(--mdc-theme-text-primary-on-background);
+color: var(--theme-text-primary-on-background);
 position: relative;
 
 &:after {
@@ -20,7 +20,7 @@ position: relative;
     border-radius: 2px;
 	left: 0;
 	content: " ";
-	background: linear-gradient(to right, var(--mdc-theme-primary) -40%, var(--mdc-theme-complementary-color) 170%) !important;
+	background: linear-gradient(to right, var(--theme-primary) -40%, var(--theme-complementary-color) 170%) !important;
 }
 `;
 

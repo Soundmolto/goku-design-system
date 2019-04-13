@@ -4,10 +4,10 @@ import { create } from '@storybook/theming';
 import { colorPrimary, colorSecondary, sidebarBG, commonBG, inputBG, CSSVariables } from '../stories/constants';
 import { withOptions } from '@storybook/addon-options';
 
-// automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stor(y|ies).jsx?$/);
+
 const loadStories = () => {
-	document.body.className += ` mdc-theme--dark`
+	document.body.className += ` theme-dark`;
 	req.keys().forEach(filename => req(filename));
 }
 
@@ -16,7 +16,6 @@ const CSSDecorator = storyFn => <Fragment>
 	{storyFn()}
 </Fragment>;
 
-// coral / ocean highlights
 const theme = create({
 	base: 'dark',
 	colorPrimary: colorPrimary,

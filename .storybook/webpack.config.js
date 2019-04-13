@@ -1,12 +1,16 @@
 const path = require('path');
 const include = path.resolve(__dirname, '../');
 
+console.log(path.resolve(include, 'node_modules'));
+
 module.exports = ({ config }) => {
 	config.module.rules.push({
 		test: /\.css$/,
 		use: [
-		{ loader: 'style-loader' },
-		{ loader: 'css-loader', options: { sourceMap: true, } } ]
+			{ loader: 'style-loader' },
+			{ loader: 'css-loader', options: { sourceMap: true, } }
+		],
+		exclude: [path.resolve(include, 'node_modules/')]
 	});
 
 	config.module.rules.push({
