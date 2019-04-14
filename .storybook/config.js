@@ -3,6 +3,7 @@ import { configure, addParameters, addDecorator } from '@storybook/preact';
 import { create } from '@storybook/theming';
 import { colorPrimary, colorSecondary, sidebarBG, commonBG, inputBG, CSSVariables } from '../stories/constants';
 import { withOptions } from '@storybook/addon-options';
+import { withA11y } from '@storybook/addon-a11y';
 
 const req = require.context('../stories', true, /.stor(y|ies).jsx?$/);
 
@@ -28,6 +29,8 @@ const theme = create({
 	brandTitle: `Goku Design System`,
 	brandUrl: 'https://github.com/soundmolto/goku-design-system',
 });
+
+addDecorator(withA11y);
 
 addParameters({
 	options: {

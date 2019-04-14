@@ -7,9 +7,10 @@ const DrawerItem = styled.a`
 	font-size: var(--theme-reduced-font-size);
 	height: auto;
 	padding: 8px 16px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 1.375rem;
 	text-decoration: none;
+	letter-spacing: 1px;
 
 	& > span.text {
 		position: relative;

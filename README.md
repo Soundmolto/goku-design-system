@@ -15,6 +15,12 @@ Very WIP, lots of things need to be implemented.
 
 ## TODO
 (everything)
+- Add custom addons that will add in support for the following
+    - Toggle dark/light theme
+    - Toggle no-animation mode
+    - Toggle waveform on & off for profile view
+    - Toggle other states as i find them
+
 - Sidebar
 - Appbar
 - Card

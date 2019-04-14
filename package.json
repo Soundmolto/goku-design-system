@@ -15,9 +15,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@storybook/addon-a11y": "^5.0.6",
     "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
     "@storybook/addon-links": "^5.0.6",
     "@storybook/addon-options": "^5.0.6",
+    "@storybook/addon-viewport": "^5.0.6",
     "@storybook/addons": "^5.0.6",
     "@storybook/preact": "^5.0.6",
     "babel-loader": "^8.0.5",
