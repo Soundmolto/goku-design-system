@@ -34,8 +34,15 @@ const DrawerItem = styled.a`
 	}
 `;
 
-export const SidebarItem = ({ children, icon, ...props }) => (
-	<DrawerItem {...props}>
+const stubbed = (onClick, e) => {
+	e.preventDefault();
+	if (onClick) {
+		onClick(e);
+	}
+}
+
+export const SidebarItem = ({ children, icon, onClick, ...props }) => (
+	<DrawerItem {...props} onClick={stubbed.bind(null, onClick)}>
 		{icon}
 		<span class="text">
 			{children}

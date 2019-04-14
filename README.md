@@ -37,4 +37,4 @@ Very WIP, lots of things need to be implemented.
 - Timeline
 - Badge
 - Bubble text (text component that has a background w/ curved borders to make it kinda bubbled)
-
+- Icons
