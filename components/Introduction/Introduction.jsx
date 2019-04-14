@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { commonFG } from '../constants';
-import { Underlined } from '../Underlined/Underlined';
+import { Underlined } from '../Underlined/src/Underlined';
 
 const Main = props => (
   <article

@@ -1,0 +1,21 @@
+{
+	"name": "@soundmolto/underlined",
+	"version": "0.0.1",
+	"description": "Soundmolto Underlined Component",
+	"author": "Jake Jarrett <jakeryanjarrett@gmail.com>",
+	"main": "dist/Underlined.jsx",
+	"module": "src/index.js",
+	"files": ["dist", "src"],
+	"directories": {
+		"lib": "src"
+	},
+	"scripts": {
+		"prepare": "yarn run build",
+		"clean": "rimraf dist && mkdir dist",
+		"build":
+			"yarn run clean && rollup src/index.js --config ../../rollup.config.js -o dist/index.js"
+	},
+	"peerDependencies": {
+		"preact": "^10.0.0-alpha.4"
+	}
+}
