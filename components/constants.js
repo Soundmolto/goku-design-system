@@ -9,22 +9,37 @@ export const commonBG = `#111111`;
 export const inputBG = `rgba(0, 0, 0, 0.7)`;
 export const commonFG = `#ffffff`;
 
+export const THEME_PRIMARY = `--theme-primary`;
+export const THEME_SECONDARY = `--theme-secondary`;
+export const THEME_BACKGROUND = `--theme-background`;
+export const THEME_PRIMARY_FONT_COLOR = `--theme-primary-font`;
+export const THEME_ERROR_BG = `--theme-error-message`;
+export const THEME_ERROR_FG = `--theme-error-message-color`;
+export const THEME_LINK_PRIMARY_ON_BG = `--theme-link-primary-on-background`;
+export const THEME_LINK_PRIMARY_ON_BG_HOVER = `--theme-link-primary-on-background-hover`;
+export const THEME_TEXT_PRIMARY = `--theme-text-primary`;
+export const THEME_COMPLEMENTARY_COLOR = `--theme-complementary-color`;
+export const LAYOUT_GRID_MARGIN_PHONE = `--layout-grid-margin-phone`;
+export const THEME_FOOTER_BACKGROUND = `--theme-footer-background`;
+export const THEME_PRIMARY_FONT_DARKER = `--theme-primary-font-darker`;
+export const THEME_TABS_BG = `--theme-tabs-bg`;
+
 export const CSSVariables = createGlobalStyle`
 :root {
-	--theme-primary: #5D8CAE;
-	--theme-secondary: #c67dcb;
-	--theme-primary-font: #FFFFFF;
-	--theme-error-message: #b64040;
-	--theme-error-message-color: #FFFFFF;
-	--theme-link-primary-on-background: #5D8CAE;
-	--theme-link-primary-on-background-hover: #c67dcb;
-	--theme-text-primary: #333;
-	--theme-complementary-color: #c67dcb;
-	--layout-grid-margin-phone: 0 !important;
-	--theme-footer-background: #cfcfcf;
-	--theme-primary-font-darker: #ccc;
-	--theme-background: #fff;
-	--theme-tabs-bg: #ccc;
+	${THEME_PRIMARY}: #5D8CAE;
+	${THEME_SECONDARY}: #c67dcb;
+	${THEME_PRIMARY_FONT_COLOR}: #FFFFFF;
+	${THEME_ERROR_BG}: #b64040;
+	${THEME_ERROR_FG}: #FFFFFF;
+	${THEME_LINK_PRIMARY_ON_BG}: #5D8CAE;
+	${THEME_LINK_PRIMARY_ON_BG_HOVER}: #c67dcb;
+	${THEME_TEXT_PRIMARY}: #333;
+	${THEME_COMPLEMENTARY_COLOR}: #c67dcb;
+	${LAYOUT_GRID_MARGIN_PHONE}: 0 !important;
+	${THEME_FOOTER_BACKGROUND}: #cfcfcf;
+	${THEME_PRIMARY_FONT_DARKER}: #ccc;
+	${THEME_BACKGROUND}: #fff;
+	${THEME_TABS_BG}: #ccc;
 	--theme-text-primary-on-background: #333333;
 
 	--theme-box-shadow-floating: 0 15px 20px -15px rgba(0, 0, 0, 0.35);

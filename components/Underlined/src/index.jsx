@@ -12,12 +12,12 @@ color: var(--theme-text-primary-on-background);
 position: relative;
 
 &:after {
-    display: block;
+	display: block;
 	position: absolute;
 	bottom: -8px;
 	height: 2px;
-    width: 100%;
-    border-radius: 2px;
+	width: 100%;
+	border-radius: 2px;
 	left: 0;
 	content: " ";
 	background: linear-gradient(to right, var(--theme-primary) -40%, var(--theme-complementary-color) 170%) !important;

@@ -13,7 +13,7 @@
 		"prepare": "yarn run build",
 		"clean": "rimraf dist && mkdir dist",
 		"build":
-			"yarn run clean && rollup src/index.js --config ../../rollup.config.js -o dist/index.js"
+			"yarn run clean && rollup src/index.jsx --config ../../rollup.config.js -o dist/index.js"
 	},
 	"peerDependencies": {
 		"preact": "^10.0.0-alpha.4"
