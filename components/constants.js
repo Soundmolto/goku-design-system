@@ -23,6 +23,7 @@ export const LAYOUT_GRID_MARGIN_PHONE = `--layout-grid-margin-phone`;
 export const THEME_FOOTER_BACKGROUND = `--theme-footer-background`;
 export const THEME_PRIMARY_FONT_DARKER = `--theme-primary-font-darker`;
 export const THEME_TABS_BG = `--theme-tabs-bg`;
+export const THEME_TEXT_PRIMARY_ON_BACKGROUND = `--theme-text-primary-on-background`;
 
 export const CSSVariables = createGlobalStyle`
 :root {
@@ -40,7 +41,7 @@ export const CSSVariables = createGlobalStyle`
 	${THEME_PRIMARY_FONT_DARKER}: #ccc;
 	${THEME_BACKGROUND}: #fff;
 	${THEME_TABS_BG}: #ccc;
-	--theme-text-primary-on-background: #333333;
+	${THEME_TEXT_PRIMARY_ON_BACKGROUND}: #333333;
 
 	--theme-box-shadow-floating: 0 15px 20px -15px rgba(0, 0, 0, 0.35);
 	--theme-card-bg: #efefef;
@@ -60,7 +61,7 @@ export const CSSVariables = createGlobalStyle`
 }
 
 .theme-dark {
-	--theme-text-primary-on-background: #fff;
+	${THEME_TEXT_PRIMARY_ON_BACKGROUND}: #fff;
 	--theme-text-primary: #FFFFFF;
 	--theme-background: #111;
 	--theme-tabs-bg: #111;

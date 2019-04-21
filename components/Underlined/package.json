@@ -1,6 +1,6 @@
 {
 	"name": "@soundmolto/underlined",
-	"version": "0.0.2-0.0.1-alpha.0.0",
+	"version": "0.0.1-alpha.0",
 	"description": "Soundmolto Underlined Component",
 	"author": "Jake Jarrett <jakeryanjarrett@gmail.com>",
 	"main": "dist/Underlined.jsx",
