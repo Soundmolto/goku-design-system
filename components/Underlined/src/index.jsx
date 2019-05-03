@@ -23,4 +23,3 @@ position: relative;
 	background: linear-gradient(to right, var(--theme-primary) -40%, var(--theme-complementary-color) 170%) !important;
 }
 `;
-
