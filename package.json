@@ -28,7 +28,7 @@
     "@storybook/addon-options": "^5.0.6",
     "@storybook/addon-viewport": "^5.0.6",
     "@storybook/addons": "^5.0.6",
-    "@storybook/preact": "^5.0.6",
+    "@storybook/preact": "^6.5.13",
     "babel-loader": "^8.0.5",
     "babel-preset-minify": "^0.5.0",
     "lerna": "^3.13.2",
